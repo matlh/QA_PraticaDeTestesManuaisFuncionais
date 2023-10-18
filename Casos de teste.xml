@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10001</projectId>
+    <projectKey>PDTMF</projectKey>
+    <exportDate>2023-10-18 00:02:47 UTC</exportDate>
+    <folders>
+        <folder fullPath="Sprint 1" index="0"/>
+        <folder fullPath="Sprint 2" index="1"/>
+    </folders>
+    <testCases>
+        <testCase id="104953970" key="PDTMF-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Matheus Lima Hilário</createdBy>
+            <createdOn>2023-10-17 22:51:55 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Sprint 1]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Login de usuário]]></name>
+            <objective><![CDATA[Verificar a funcionalidade de login de usu&aacute;rio cadastrado&nbsp;]]></objective>
+            <owner>712020:af53a693-e73b-4bec-8c34-4b977ec57207</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given um usuário já cadastrado 
+And deseja fazer login
+When preenche CPF e senha
+Then login efetuado com sucesso]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="104953990" key="PDTMF-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Matheus Lima Hilário</createdBy>
+            <createdOn>2023-10-17 22:55:10 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Sprint 1]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Senha errada]]></name>
+            <objective><![CDATA[Retornar aviso para usu&aacute;rio qunado a senha for digitada errada]]></objective>
+            <owner>712020:af53a693-e73b-4bec-8c34-4b977ec57207</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Tratar senha errada digitada pelo usu&aacute;rio]]></description>
+                        <expectedResult><![CDATA[Retornar para o usu&aacute;rio aviso de senha errada ou CPF incorreto]]></expectedResult>
+                        <testData><![CDATA[Senha diferente da senha de cadastro&nbsp;]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="104954072" key="PDTMF-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Matheus Lima Hilário</createdBy>
+            <createdOn>2023-10-17 23:03:46 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Sprint 2]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Autenticar a senha escolhida pleo usuário durante cadastro]]></name>
+            <objective><![CDATA[Verificar se a senha escolhida pelo usu&aacute;rio possui no m&iacute;nimo 8 caracteres, pelo menos uma letra mau&iacute;scula e pelo menos um caracter especial&nbsp;&nbsp;]]></objective>
+            <owner>712020:af53a693-e73b-4bec-8c34-4b977ec57207</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given uma senha escolhida pelo usuário
+And não possui pelo menos 8 caracteres, pelo menos uma letra maiúscula e pelo menos um caracter especial
+When o usuário preenche o campo senha com a senha escolhida
+Then retorno de mensagem para o usuário que a senha cadastrada deve conter no mínimo 8 caracteres, pelo menos uma letra maiúscula e pelo menos um caracter especial]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="104954154" key="PDTMF-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Matheus Lima Hilário</createdBy>
+            <createdOn>2023-10-17 23:10:15 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Sprint 2]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Preenchimento de campos obrigatórios]]></name>
+            <objective><![CDATA[Verificar se o usu&aacute;rio ao efetuar o cadastro preencheu todos os campos obrigat&oacute;rios]]></objective>
+            <owner>712020:af53a693-e73b-4bec-8c34-4b977ec57207</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Verificar obrigatoriedade dos campos a serem preenchidos para cadastro de usuario]]></description>
+                        <expectedResult><![CDATA[O usuario deve receber uma mensagem de alerta de que um campo obrigat&oacute;rio n&atilde;o foi preenchido]]></expectedResult>
+                        <testData><![CDATA[Cada um dos campos definidos como obrigat&oacute;rio o preenchimento devem ser deixados em branco e devr&aacute; ser efetuada tentaiva de finaliza&ccedil;&atilde;o do cadastro&nbsp;]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
